@@ -1,9 +1,27 @@
-function isPalindrome(word) {
-  // Write your algorithm here
+// Write your algorithm here
+
+function isPalindrome(str) {
+  // Convert to lowercase
+  str = str.toLowerCase();
+
+  // Compare the original string with its reverse
+  return str === str.split('').reverse().join('');
+  // .reverse() only accepts arrays
 }
+
+console.log(isPalindrome("mom"));      
+console.log(isPalindrome("racecar"));  
+console.log(isPalindrome("hello"));    
+
 
 /* 
   Add your pseudocode here
+*/
+
+/* call a function that takes a string as argument.
+  I change the string to lowercase to avoid problems.
+  I call the methods split, reverse and join to the string.
+  I compare the original and final string by ===
 */
 
 /*
